@@ -1,0 +1,14 @@
+// Verificar si un año es bisiesto
+
+Proceso AnioBisiesto
+    Definir anio Como Entero
+
+    Escribir "Ingrese un año:"
+    Leer anio
+
+    Si (anio % 4 = 0 Y anio % 100 <> 0) O (anio % 400 = 0) Entonces
+        Escribir "El año es Bisiesto"
+    SiNo
+        Escribir "El año NO es Bisiesto"
+    FinSi
+FinProceso

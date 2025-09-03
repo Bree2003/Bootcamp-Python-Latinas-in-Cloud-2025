@@ -1,0 +1,18 @@
+// Determinar si un número es positivo, negativo o cero
+
+Proceso NumeroPositivoNegativoCero
+    Definir numero Como Entero
+
+    Escribir "Ingrese un número:"
+    Leer numero
+
+    Si numero > 0 Entonces
+        Escribir "El número es Positivo"
+    SiNo
+        Si numero < 0 Entonces
+            Escribir "El número es Negativo"
+        SiNo
+            Escribir "El número es Cero"
+        FinSi
+    FinSi
+FinProceso
