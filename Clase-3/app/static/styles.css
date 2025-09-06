@@ -1,0 +1,18 @@
+/* Elementos */
+h1, h2 {
+    color: blue;
+}
+/* clases */
+.titulo {
+    color: green;
+}
+/* id */
+#tercero {
+    color: red;
+}
+
+div, h4, h5 {
+    background-color: lightpink;
+    padding: 20px;
+    margin: 10px;
+}

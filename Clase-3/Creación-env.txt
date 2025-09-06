@@ -1,7 +1,7 @@
 # ¿Qué es un venv? (Virtual Environment o Entorno Virtual)
 
 # Es básicamente un "espacio aislado" donde puedes instalar
-# librerías de ÿthon sin afectar a tu sistema global ni a otros proyectos
+# librerías de python sin afectar a tu sistema global ni a otros proyectos
 
 # Piensa en ello como una caja independiente para tu proyecto:
 # dentro de esa caja puedes tener versiones específicas de Python y librerías,

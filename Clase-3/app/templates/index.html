@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Proyecto Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>¡Hola, Flask!</h1>
+    <h1 class="titulo">¡Hola, Flask!</h1>
+    <h2>¡Hola, Flask!</h2>
+    <h3 id="tercero">¡Hola, Flask!</h3>
+    <h4>¡Hola, Flask!</h4>
+    <h5>¡Hola, Flask!</h5>
+    <p>Texto principal que utilizaremos</p>
+    <div>hola</div>
+    <form action="">
+        <input type="text" placeholder="Ingrese su nombre">
+        <input type="password" name="" id="" placeholder="Ingrese su contraseña">
+        <input type="checkbox" name="check" id="check">
+        <label for="check">
+            Check
+        </label>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
