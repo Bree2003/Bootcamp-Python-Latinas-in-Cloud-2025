@@ -1,0 +1,32 @@
+# ¿Qué es un venv? (Virtual Environment o Entorno Virtual)
+
+# Es básicamente un "espacio aislado" donde puedes instalar
+# librerías de ÿthon sin afectar a tu sistema global ni a otros proyectos
+
+# Piensa en ello como una caja independiente para tu proyecto:
+# dentro de esa caja puedes tener versiones específicas de Python y librerías,
+# y no va a chocar con otros proyectos que tengas en tu computador
+
+# 1. Creas un venv dentro de tu proyecto
+python -m venv venv
+
+# 2. Activas el venv
+# En Windows:
+venv\Scripts\activate
+# En Mac/Linux:
+source venv/bin/activate 
+
+# Ahora, cualquier librería que instales con pip install solo se instala 
+# dentro del venv y no en el sistema global
+
+# 3. Salir del venv
+deactivate 
+
+# Para instalar librerias
+pip install nombre_libreria
+
+# Crea archivo requirements.txt para dejar todas las librerías a usar en el proyecto que estén instaladas
+pip freeze > requirements.txt
+
+# Correr el siguiente comando para instalar
+pip install -r requirements.txt
