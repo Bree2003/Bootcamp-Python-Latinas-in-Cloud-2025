@@ -1,0 +1,77 @@
+/* Estilos generales del body */
+body {
+  font-family: Arial, sans-serif; /* Fuente de letra */
+  background-color: #f5f5f5;       /* Fondo gris claro */
+  display: flex;                   /* Usamos flexbox para centrar el contenedor */
+  justify-content: center;         /* Centra horizontalmente */
+  padding: 50px;                   /* Espacio alrededor del contenido */
+}
+
+/* Contenedor principal */
+.container {
+  background: white;                        /* Fondo blanco */
+  padding: 20px 30px;                       /* Espaciado interno */
+  border-radius: 10px;                      /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);   /* Sombra suave */
+  width: 500px;                             /* Ancho fijo */
+}
+
+/* Estilo del título principal */
+h1 {
+  text-align: center;   /* Centra el texto */
+  margin-bottom: 20px;  /* Espacio debajo del título */
+}
+
+/* Formulario */
+form {
+  display: flex;            /* Flexbox */
+  flex-direction: column;   /* Elementos en columna */
+}
+
+/* Etiquetas de los inputs */
+label {
+  margin: 10px 0 5px;      /* Espaciado arriba y abajo */
+}
+
+/* Inputs y textarea */
+input, textarea {
+  padding: 8px;               /* Espacio interno */
+  border-radius: 5px;         /* Bordes redondeados */
+  border: 1px solid #ccc;     /* Borde gris claro */
+}
+
+/* Botón del formulario */
+button {
+  margin-top: 20px;          /* Espacio arriba del botón */
+  padding: 10px;             /* Espacio interno */
+  background: #28a745;       /* Color verde */
+  color: white;              /* Texto blanco */
+  border: none;              /* Sin borde */
+  border-radius: 5px;        /* Bordes redondeados */
+  cursor: pointer;           /* Cursor de mano al pasar */
+}
+
+/* Efecto hover del botón */
+button:hover {
+  background: #218838;       /* Verde más oscuro al pasar el mouse */
+}
+
+/* Contenedor de la lista de tareas */
+.tareas {
+  margin-top: 30px;          /* Espacio arriba */
+}
+
+/* Lista no ordenada dentro de tareas */
+.tareas ul {
+  list-style: none;          /* Quita los puntos de la lista */
+  padding: 0;                /* Quita el padding predeterminado */
+}
+
+/* Cada tarea individual */
+.tareas li {
+  background: #f0f8ff;             /* Fondo azul muy claro */
+  margin-bottom: 10px;             /* Espacio entre tareas */
+  padding: 10px;                    /* Espaciado interno */
+  border-left: 5px solid #28a745;  /* Línea verde a la izquierda */
+  border-radius: 5px;               /* Bordes redondeados */
+}

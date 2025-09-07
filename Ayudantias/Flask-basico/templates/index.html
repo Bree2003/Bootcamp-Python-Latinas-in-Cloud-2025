@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gestor de Tareas</title>
+    <!-- Link al archivo CSS estático -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestor de Tareas</h1>
+
+        <!-- Formulario para agregar tarea -->
+        <!-- method="POST" indica que envía datos al servidor -->
+        <!-- action="{{ url_for('agregar') }}" genera la URL de la función Flask "agregar" -->
+        <form method="POST" action="{{ url_for('agregar') }}">
+            <label for="titulo">Título:</label>
+            <!-- Input para el título de la tarea, required obliga a completarlo -->
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="descripcion">Descripción:</label>
+            <!-- Textarea para la descripción, opcional -->
+            <textarea id="descripcion" name="descripcion"></textarea>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Agregar tarea</button>
+        </form>
+
+        <!-- Lista de tareas -->
+        <div class="tareas">
+            <h2>Tareas</h2>
+            <!-- Si la lista de tareas tiene elementos, los mostramos -->
+            {% if tareas %}
+            <ul>
+                <!-- Recorremos cada tarea de la lista pasada desde Flask -->
+                {% for tarea in tareas %}
+                <li>
+                    <!-- Mostramos título y descripción de cada tarea -->
+                    <strong>{{ tarea['titulo'] }}</strong><br>
+                    <span>{{ tarea['descripcion'] }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            <!-- Si no hay tareas, mostramos un mensaje -->
+            {% else %}
+            <p>No hay tareas aún.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>
