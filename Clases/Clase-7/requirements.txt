@@ -1,0 +1,5 @@
+Flask==3.3.2
+Flask-SQLAlchemy==3.0.5
+Flask-Migrate==4.0.4
+psycopg2-binary==2.9.7
+Flask-WTF

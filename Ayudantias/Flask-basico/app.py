@@ -20,6 +20,8 @@ tareas = []
 
 @app.route('/')
 def index():
+
+    print(tareas)
     # Renderizamos la plantilla 'index.html' y le
     # pasamos la lista de tareas como variable
     return render_template('index.html', tareas=tareas)
@@ -28,7 +30,7 @@ def index():
 # Acepta solo el método POST (cuando se envía el formulario)
 
 
-@app.route('/agregar', methods=['POST'])
+@app.route('/agregar', methods=['GET'])
 def agregar():
     # Obtenemos los datos que vienen del formulario
     titulo = request.form.get("titulo")
@@ -43,7 +45,8 @@ def agregar():
         })
 
     # Redirigimos al usuario de vuelta a la página principal
-    return redirect(url_for("index"))
+    # return redirect(url_for("index"))
+    return render_template('index.html', tareas=tareas)
 
 
 # Punto de entrada de la aplicación

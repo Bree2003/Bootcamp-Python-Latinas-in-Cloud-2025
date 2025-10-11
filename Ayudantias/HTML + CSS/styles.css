@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: pink;
+}
+
+.padre {
+    background: lightblue;
+}
+
+.hijo {
+    background: lightgreen;
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+}
+
+img {
+    width: 100px;
+}
+
+.img {
+    height: 133px;
+    width: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1529778873920-4da4926a72c2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z2F0aXRvfGVufDB8fDB8fHww');
+}
+
+.rellenos {
+    height: 100px;
+    width: 100px;
+    background: yellowgreen;
+    padding: 100px 130px 120px 150px;
+    margin: 100px;
+    /* padding-top: 100px; */
+    border: 1px solid black;
+}
+
+
+
+.container{
+  position: relative;
+  width: min(700px, 90vw);
+  height: 120px;
+  border: 2px dashed #999;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 24px auto;
+}
+
+.box {
+  --size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: var(--size);
+  height: var(--size);
+  background: #5b8cff;
+  border-radius: 14px;
+  transform: translate(0, -50%);
+  animation: marquee 4s linear infinite; /* ahora cruza de lado a lado */
+}
+
+@keyframes marquee {
+  from { transform: translate(-100%, -50%); }
+  to   { transform: translate(100%, -50%); }
+}

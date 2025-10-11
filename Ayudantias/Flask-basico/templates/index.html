@@ -15,7 +15,7 @@
         <!-- Formulario para agregar tarea -->
         <!-- method="POST" indica que envía datos al servidor -->
         <!-- action="{{ url_for('agregar') }}" genera la URL de la función Flask "agregar" -->
-        <form method="POST" action="{{ url_for('agregar') }}">
+        <form method="GET" action="{{ url_for('agregar') }}">
             <label for="titulo">Título:</label>
             <!-- Input para el título de la tarea, required obliga a completarlo -->
             <input type="text" id="titulo" name="titulo" required>
